@@ -281,6 +281,10 @@ textarea {
     width: 358px;
     height: 268px;
   }
+
+  textarea, input {
+      width: 334px;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -290,7 +294,7 @@ textarea {
   }
 
   #main-bio {
-    width: 710px;
+    width: 708px;
   }
 
   .footer {
@@ -302,7 +306,7 @@ textarea {
   }
 
   #contact-info {
-    width: 710px;
+    width: 708px;
     margin-left: 0;
   }
 
@@ -319,6 +323,10 @@ textarea {
   .portfolio-image-container {
     margin: 20px;
   }
+
+  textarea, input {
+      width: 642px;
+  }
 }
 
 @media screen and (max-width: 640px){
@@ -328,7 +336,7 @@ textarea {
   }
 
   #main-bio {
-    width: 596px;
+    width: 580px;
   }
 
   .footer {
@@ -362,11 +370,25 @@ textarea {
   }
 
   #contact-info {
-    width: 596px;
+    width: 580px;
     margin-left: 0;
   }
 
   #contactContainer {
     width: 505px;
+  }
+
+  .portfolio-image,
+  .portfolio-image-container {
+    width: 538px;
+    height: 400px;
+  }
+
+  .portfolio-image-container {
+    margin: 20px;
+  }
+
+  textarea, input {
+      width: 516px;
   }
 }
