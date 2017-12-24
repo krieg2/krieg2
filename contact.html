@@ -39,14 +39,18 @@
 
       <!-- Form -->
       <div id="formContainer">
-      <form action="" method="get">
+      <form method="POST" action="http://formspree.io/aaronk1@yahoo.com">
+        <input type="hidden" name="_format" value="plain">
+        <input type="hidden" name="_subject" value="Portfolio Contact Form Submission">
+        <input type="hidden" name="_next" value="https://krieg2.github.io/contact.html">
+        <input type="text" name="_gotcha" style="display:none" />
         <label>Name</label><br>
-        <input type="text" name="fname"><br>
+        <input type="text" name="name" placeholder="Your full name"><br>
         <label>Email</label><br>
-        <input type="text" name="fmail"><br>
+        <input type="email" name="email" placeholder="Your email"><br>
         <label>Message</label><br>
-        <textarea rows="14" type="text" name="fname"></textarea><br>
-        <input id="submitButton" type="submit" value="Submit">
+        <textarea placeholder="Your message..." rows="14" type="text" name="message"></textarea><br>
+        <input id="submitButton" type="submit" value="Send">
       </form>
       </div>
 
@@ -69,7 +73,13 @@
           <img src="assets/images/if_overflow_334695.png" alt="stack overflow" class="iconLink" style="margin-right:0px">
         </a>
 
+        <div id="contactBottom">
+          <p>Email: aaronk1@yahoo.com</p>
+          <br>
+          <p>Phone: 201-232-6205</p>
+        </div>
       </div>
+
     </section>
   </div>
 
