@@ -1,92 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
   <meta name="referrer" content="no-referrer-when-downgrade">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Bootstrap js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!-- Custom styles -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
 </head>
 
 <body>
-  <div class="wrapper">
 
-  <header>
-    <div id="headerContainer">
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
 
-      <section id="nameTag">
-	      <h1>Aaron Kriegler</h1>
-	    </section>
+    <a class="" href="#" id="logo">Aaron Kriegler</a>
 
-	    <section id="headerMenu">
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <a href="index.html" class="headerLink headerCol">About</a>
-        <a href="portfolio.html" class="headerLink headerCol">Portfolio</a>
-        <a href="contact.html" class="headerLink">Contact</a>
-
-	    </section>
+    <div class="collapse navbar-collapse justify-content-end mr-2" id="menu">
+      <ul class="navbar-nav"">
+        <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+      </ul>
     </div>
-  </header>
 
-  <div class="container">
+  </nav>
 
-    <section id="main-bio">
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
 
-      <h2>Contact</h2>
+        <div class="col col-md-8 col-sm-12 col-xs-12">
+          <section id="main-bio">
 
-      <div class="border"></div>
+            <h2>Contact</h2>
 
-      <!-- Form -->
-      <div id="formContainer">
-      <form method="POST" action="https://formspree.io/aaronk1@yahoo.com">
-        <input type="hidden" name="_format" value="plain">
-        <input type="hidden" name="_subject" value="Portfolio Contact Form Submission">
-        <input type="hidden" name="_next" value="https://krieg2.github.io/contact.html">
-        <input type="text" name="_gotcha" style="display:none" />
-        <label>Name</label><br>
-        <input type="text" name="name" placeholder="Your full name"><br>
-        <label>Email</label><br>
-        <input type="email" name="email" placeholder="Your email"><br>
-        <label>Message</label><br>
-        <textarea placeholder="Your message..." rows="14" name="message"></textarea><br>
-        <input id="submitButton" type="submit" value="Send">
-      </form>
-      </div>
+            <!-- Form -->
+            <div id="formContainer">
+            <form method="POST" action="https://formspree.io/aaronk1@yahoo.com">
 
-    </section>
-    
+              <div class="form-group">
+              <input type="hidden" name="_format" value="plain" />
+              <input type="hidden" name="_subject" value="Portfolio Contact Form Submission" />
+              <input type="hidden" name="_next" value="https://krieg2.github.io/contact.html" />
+              <input type="text" name="_gotcha" style="display:none" />
+              </div>
+              <div class="form-group">
+              <label for="name">Name</label>
+              <input class="form-control form-control-lg" type="text" name="name" placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+              <label for="email">Email</label>
+              <input class="form-control form-control-lg" type="email" name="email" placeholder="Your email" />
+              </div>
+              <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control form-control-lg" placeholder="Your message..." rows="14" name="message"></textarea>
+              </div>
+              <input id="submitButton" class="btn btn-outline-primary" type="submit" value="Send" />
 
-    <section id="contact-info">
-      <div id="contactContainer">
-        <h3>Connect with Me</h3>
+            </form>
+            </div>
 
-        <a href="https://github.com/krieg2" target="_blank">
-          <img src="assets/images/if_github_401441.png" alt="git hub" class="iconLink">
-        </a>
-
-        <a href="https://www.linkedin.com/in/akriegler" target="_blank">
-          <img src="assets/images/if_linkedin_334668.png" alt="linked in" class="iconLink">
-        </a>
-
-        <a href="https://stackoverflow.com/users/8242393/krieg2" target="_blank">
-          <img src="assets/images/if_overflow_334695.png" alt="stack overflow" class="iconLink" style="margin-right:0px">
-        </a>
-
-        <div id="contactBottom">
-          <p>Email: aaronk1@yahoo.com</p>
-          <br>
-          <p>Phone: 201-232-6205</p>
+          </section>
         </div>
-      </div>
+    
+        <div class="col col-md-4 col-sm-12 col-xs-12">
+          <section id="contact-info">
+            <div id="contactContainer">
 
-    </section>
-  </div>
+              <h3>Connect with Me</h3>
 
-  </div>
+              <a href="https://github.com/krieg2" target="_blank">
+                <img src="assets/images/if_github_401441.png" alt="git hub" class="iconLink">
+              </a>
 
-  <div class="footerContainer">
-    <footer class="footer">© Copyright 2017 Aaron Kriegler</footer>
-  </div>
+              <a href="https://www.linkedin.com/in/akriegler" target="_blank">
+                <img src="assets/images/if_linkedin_334668.png" alt="linked in" class="iconLink">
+              </a>
+
+              <a href="https://stackoverflow.com/users/8242393/krieg2" target="_blank">
+                <img src="assets/images/if_overflow_334695.png" alt="stack overflow" class="iconLink">
+              </a>
+
+              <div id="contactBottom">
+                <p>Email: aaronk1@yahoo.com</p>
+                <p class="mb-0">Phone: 201-232-6205</p>
+              </div>
+            </div>
+          </section>
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </div> <!-- wrapper -->
+
+  <footer class="footer">&copy; Copyright 2017 Aaron Kriegler</footer>
+
 </body>
 </html>

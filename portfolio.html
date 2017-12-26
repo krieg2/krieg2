@@ -1,112 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Bootstrap js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!-- Custom styles -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
 </head>
 
 <body>
-  <div class="wrapper">
 
-  <header>
-    <div id="headerContainer">
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
 
-      <section id="nameTag">
-	      <h1>Aaron Kriegler</h1>
-	    </section>
+    <a class="" href="#" id="logo">Aaron Kriegler</a>
 
-	    <section id="headerMenu">
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <a href="index.html" class="headerLink headerCol">About</a>
-        <a href="portfolio.html" class="headerLink headerCol">Portfolio</a>
-        <a href="contact.html" class="headerLink">Contact</a>
-
-	    </section>
+    <div class="collapse navbar-collapse justify-content-end mr-2" id="menu">
+      <ul class="navbar-nav"">
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+      </ul>
     </div>
-  </header>
 
+  </nav>
 
-  <div class="container">
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
 
-    <section id="main-bio">
+        <div class="col col-md-8">
+          <section id="main-bio">
 
-      <h2>Portfolio</h2>
+            <h2>Portfolio</h2>
 
-      <div class="border"></div>
+            <div class="portfolio-image-container portfolio-image-left">
+              <a href="https://krieg2.github.io/Hangman-Game" target="_blank">
+              <img class="portfolio-image" src="assets/images/technics-q-c-640-480-1.jpg" alt="Hangman">
+              <div class="portfolio-image-banner">Hangman</div>
+              </a>
+            </div>
 
-      <div class="portfolio-image-container portfolio-image-left">
-        <a href="https://krieg2.github.io/Hangman-Game" target="_blank">
-        <img class="portfolio-image" src="assets/images/technics-q-c-640-480-1.jpg" alt="Hangman">
-        <div class="portfolio-image-banner">Hangman</div>
-        </a>
-      </div>
+             <div class="portfolio-image-container portfolio-image-right">
+               <a href="https://mighty-crag-92193.herokuapp.com" target="_blank">
+               <img class="portfolio-image" src="assets/images/technics-q-c-640-480-2.jpg" alt="Barber Shop Scheduler">
+               <div class="portfolio-image-banner">Barber Shop Scheduler</div>
+               </a>
+             </div>
+             <br>
 
-       <div class="portfolio-image-container portfolio-image-right">
-         <a href="#">
-         <img class="portfolio-image" src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-         <div class="portfolio-image-banner">RPG Game</div>
-         </a>
-       </div>
-       <br>
+              <div class="portfolio-image-container portfolio-image-left">
+                <a href="https://krieg2.github.io/TriviaGame" target="_blank">
+                <img class="portfolio-image " src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+                <div class="portfolio-image-banner">Trivia Game</div>
+                </a>
+              </div>
 
-        <div class="portfolio-image-container portfolio-image-left">
-          <a href="https://krieg2.github.io/TriviaGame" target="_blank">
-          <img class="portfolio-image " src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-          <div class="portfolio-image-banner">Trivia Game</div>
-          </a>
+              <div class="portfolio-image-container portfolio-image-right">
+                <a href="#" target="_blank">
+                <img class="portfolio-image" src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+                <div class="portfolio-image-banner">Rutgers Info Widget</div>
+                </a>
+              </div>
+
+              <br>
+
+              <div class="portfolio-image-container portfolio-image-left">
+                <a href="https://krieg2.github.io/RPS-Multiplayer" target="_blank">
+                <img class="portfolio-image" src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+                <div class="portfolio-image-banner">Rock Paper Scissors</div>
+                </a>
+              </div>
+
+          </section>
         </div>
 
-        <div class="portfolio-image-container portfolio-image-right">
-          <a href="#">
-          <img class="portfolio-image" src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-          <div class="portfolio-image-banner">Rutgers Info Widget</div>
-          </a>
-        </div>
+        <div class="col col-md-4">
+          <section id="contact-info">
+            <div id="contactContainer">
 
-        <br>
+              <h3>Connect with Me</h3>
 
-        <div class="portfolio-image-container portfolio-image-left">
-          <a href="https://krieg2.github.io/RPS-Multiplayer" target="_blank">
-          <img class="portfolio-image" src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-          <div class="portfolio-image-banner">Rock Paper Scissors</div>
-          </a>
-        </div>
+              <a href="https://github.com/krieg2">
+                <img src="assets/images/if_github_401441.png" alt="git hub" target="_blank" class="iconLink">
+              </a>
 
-    </section>
-    
+              <a href="https://www.linkedin.com/in/akriegler">
+                <img src="assets/images/if_linkedin_334668.png" alt="linked in" target="_blank" class="iconLink">
+              </a>
 
-    <section id="contact-info">
-      <div id="contactContainer">
-        <h3>Connect with Me</h3>
+              <a href="https://stackoverflow.com/users/8242393/krieg2">
+                <img src="assets/images/if_overflow_334695.png" alt="stack overflow" target="_blank" class="iconLink">
+              </a>
 
-        <a href="https://github.com/krieg2" target="_blank">
-          <img src="assets/images/if_github_401441.png" alt="git hub" class="iconLink">
-        </a>
+              <div id="contactBottom">
+                <p>Email: aaronk1@yahoo.com</p>
+                <p class="mb-0">Phone: 201-232-6205</p>
+              </div>
+            </div>
+          </section>
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </div> <!-- wrapper -->
 
-        <a href="https://www.linkedin.com/in/akriegler" target="_blank">
-          <img src="assets/images/if_linkedin_334668.png" alt="linked in" class="iconLink">
-        </a>
-
-        <a href="https://stackoverflow.com/users/8242393/krieg2" target="_blank">
-          <img src="assets/images/if_overflow_334695.png" alt="stack overflow" class="iconLink" style="margin-right:0px">
-        </a>
-
-        <div id="contactBottom">
-          <p>Email: aaronk1@yahoo.com</p>
-          <br>
-          <p>Phone: 201-232-6205</p>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  </div>
-
-  <div class="footerContainer">
-    <footer class="footer">© Copyright 2017 Aaron Kriegler</footer>
-  </div>
+  <footer class="footer">&copy; Copyright 2017 Aaron Kriegler</footer>
 </body>
 </html>
