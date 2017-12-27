@@ -64,12 +64,15 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #contactContainer {
-  min-width: 210px;
   padding: 0px;
+  text-align: center;
   position: relative;
+  min-width: 210px;
+  width: 100%;
 }
 
 #contact-info {
+  width: 100%;
   min-width: 280px;
   padding: 30px;
 }
