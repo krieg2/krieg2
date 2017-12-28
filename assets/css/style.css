@@ -13,7 +13,7 @@ body {
 
 h2 {
   font-size: 28px;
-  margin: 20px;
+  /*margin: 20px;*/
   padding-bottom: 20px;
   margin-bottom: 15px; 
   border-bottom: 2px solid;
@@ -52,7 +52,7 @@ a:link, a:visited, a:hover, a:active {
 #bio-image {
   width: 185px;
   height: 200px;
-  margin: 10px 26px 10px 20px;
+  margin: 10px 26px 10px 0px;
   float: left;
 }
 
@@ -119,11 +119,8 @@ a:link, a:visited, a:hover, a:active {
 
 #main-bio {
   margin-bottom: 40px;
+  padding: 20px;
   width: 100%;
-}
-
-#bio {
-  padding: 10px 10px 0px 20px;
 }
 
 .footer {
@@ -149,25 +146,14 @@ a:link, a:visited, a:hover, a:active {
 
 .portfolio-image-container {
   position: relative;
-  margin: 20px;
-  margin-bottom: 36px;
-  width: 274px;
-  height: 205px;
-  float: left;
+  max-width: 320px;
+  max-height: 220px;
+  min-width: 258px;
+  min-height: 171px;
   z-index: 1;
 }
 
-.portfolio-image-right {
-  margin-right: 10px;
-}
-
-.portfolio-image-left {
-  margin-left: 20px;
-}
-
 .portfolio-image {
-  width: 274px;
-  height: 205px;
   z-index: 2;
 }
 
@@ -186,6 +172,14 @@ a:link, a:visited, a:hover, a:active {
   margin: 0;
   text-align: center;
   z-index: 3;
+}
+
+@media screen and (max-width: 992px){
+
+  .portfolio-image-container {
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (max-width: 768px){
