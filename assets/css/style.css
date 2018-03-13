@@ -43,6 +43,15 @@ h2, h3 {
     color: #007bff;
 }
 
+.navbar-nav > .nav-item > .nav-link {
+    color: #dddddd;
+}
+
+.navbar-nav > .nav-item.active > .nav-link {
+    color: #dddddd;
+    border-bottom: 2px dotted #007bff;
+}
+
 #formContainer {
   padding: 20px;
   min-width: 300px;
@@ -85,6 +94,11 @@ h2, h3 {
 .navbar {
   padding: 0px;
   margin-bottom: 30px;
+  box-shadow: 0 4px 20px #000;
+  background: url("../images/pexels-photo-135020.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 #logo {
@@ -114,6 +128,7 @@ h2, h3 {
   float: left;
   border: 1px solid;
   border-color: #dddddd;
+  box-shadow: 6px 4px 20px #000;
 }
 
 #main-bio, #badges {
