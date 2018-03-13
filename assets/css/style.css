@@ -65,24 +65,35 @@ h2, h3 {
 }
 
 .icon-link {
-  width: 62px;
-  height: 62px;
+  width: 58px;
+  height: 58px;
   border: 0;
   margin: 8px 5px 0px 0px;
+  border-radius: 3px;
+}
+
+.hrank {
+  background-color: green;
 }
 
 #contactContainer {
-  padding: 0px;
+  padding: 20px;
+  margin: 0 auto;
   text-align: center;
-  position: relative;
-  min-width: 210px;
+  min-width: 300px;
   width: 100%;
 }
 
 #contact-info {
+  margin: 0 auto;
   width: 100%;
-  min-width: 280px;
-  padding: 30px;
+  min-width: 340px;
+  padding: 0px;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
 }
 
 #contactBottom {
@@ -113,6 +124,7 @@ h2, h3 {
   text-align: center;
   float: left;
   font-family: Georgia, Times, "Times New Roman", serif;
+  border-radius: 3px;
 }
 
 #menu {
