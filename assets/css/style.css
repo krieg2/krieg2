@@ -45,11 +45,32 @@ h2, h3 {
 
 .navbar-nav > .nav-item > .nav-link {
     color: #dddddd;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-nav > .nav-item > .nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 2px solid #007bff;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s;
+}
+
+.navbar-nav > .nav-item > .nav-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .navbar-nav > .nav-item.active > .nav-link {
-    color: #dddddd;
-    border-bottom: 2px dotted #007bff;
+    color: #007bff;
 }
 
 #formContainer {
